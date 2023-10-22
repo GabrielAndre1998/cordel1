@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+
+:root {
+    --fonte1: verdana, Geneva, tahoma, sans-serif;
+    --fonte2: 'Passion One' , sem serifa;
+    --fonte3: 'Sriracha', cursiva;
+    
+
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html , body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+    
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    line-height: 2em;
+    padding-left: 35px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section.normal {
+    background-color: #fff;
+    color: #000000;
+}
+
+section.imagem > p {
+    background-color: #00000059;
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+section.imagem {
+    background-color: aquamarine;
+    color: #ffffff;
+    box-shadow: inset 6px 6px 15px 0px #000000;
+    background-attachment: fixed;
+}
+
+section > p {
+    padding: 2em;
+}
+
+
+section#img01 {
+background-image: url('imagens/Fundo\ Business\ Atmospheric\ Blue\ Technology\ Fundo\ De\ Plataforma\ De\ Internet\ Tecnologia\ Azul\ Sentido\ Tecnológico\ Negócio\ Atmosfera\ Dados\ Papel\ de\ Parede\ Para\ Download\ Gratuito\ -\ Pngtree.png');
+background-position: center center;
+background-size: cover;
+
+
+}
+
+
+section#img02 {
+    background-image: url('imagens/Evolução\ e\ Inovação\ na\ Tecnologia.png');
+    background-position: center center;
+    background-size: cover;
+
+
+}
+
+
+section#img01,
+section#img02 {
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+section#img01::before,
+section#img02::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.082); /* Cor de fundo branca com 70% de opacidade */
+  z-index: -1; /* Coloca a camada atrás da imagem de fundo */
+}
+
+section#img01 {
+  background-image: url('imagens/Fundo\ Business\ Atmospheric\ Blue\ Technology\ Fundo\ De\ Plataforma\ De\ Internet\ Tecnologia\ Azul\ Sentido\ Tecnológico\ Negócio\ Atmosfera\ Dados\ Papel\ de\ Parede\ Para\ Download\ Gratuito\ -\ Pngtree.png');
+  filter: brightness(0.7); /* Reduz a luminosidade da imagem (0.7 torna a imagem mais escura) */
+}
+
+section#img02 {
+  background-image: url('imagens/Evolução\ e\ Inovação\ na\ Tecnologia.png');
+  filter: brightness(0.7); /* Reduz a luminosidade da imagem (0.7 torna a imagem mais escura) */
+}
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
